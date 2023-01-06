@@ -2,6 +2,7 @@ import Header from './components/Header';
 import React, { createContext, useState } from 'react';
 
 import Select from './components/Select';
+import Rules from './components/Rules';
 
 export const scoreContext = React.createContext('');
 //export let SearchBarFocus = React.createContext();
@@ -17,6 +18,7 @@ function App() {
         </header>
         <Select></Select>
       </scoreContext.Provider>
+      <Rules></Rules>
     </div>
   );
 }

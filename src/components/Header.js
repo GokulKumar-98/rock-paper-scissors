@@ -4,7 +4,7 @@ import '../styles/header.css';
 
 function Header() {
   const context = useContext(scoreContext);
-  console.log(context);
+  //console.log(context);
   const [count, setCount] = useState(0);
   const increment = () => {
     setCount(count + 1);

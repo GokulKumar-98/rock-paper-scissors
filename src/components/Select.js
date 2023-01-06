@@ -19,7 +19,8 @@ const Select = () => {
   });
 
   const onclick = (e) => {
-    console.log(e.target.className);
+    if (e.target.className == 'triangle') return;
+
     const randomNumber = Math.floor(Math.random() * 3);
     let compChoice = null;
     if (randomNumber === 0) {
@@ -44,32 +45,33 @@ const Select = () => {
     }
 
     setShow({
-      show: '',
+      visible: '',
       choice: e.target.className,
       compChoice: compChoice,
       result: result,
     });
   };
 
-  const reset = () => {
+  const reset = (setShowResult) => {
     setShow({
-      visible: 'hide',
       choice: '',
+      visible: 'hide',
     });
   };
 
   return (
     <div className="selector">
-      <div
-        className={`arranger ${show.visible == 'hide' ? '' : 'hide'}`}
-        onClick={onclick}
-      >
-        {imgs.map((el, i) => (
-          <span key={i}>{el}</span>
-        ))}
+      <div className={`arranger ${show.visible == 'hide' ? '' : 'hide'}`}>
+        <div onClick={onclick}>
+          {imgs.map((el, i) => (
+            <span className="allimgs" key={i}>
+              {el}
+            </span>
+          ))}
+        </div>
         <img className="triangle" src={tri} alt=""></img>
       </div>
-      <Result values={show} bt={reset}></Result>
+      <Result values={show} reset={reset}></Result>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 .selector {
   display: flex;
-  margin-top: 170px;
+  margin-top: 150px;
   justify-content: center;
   align-items: center;
 }
@@ -13,6 +13,7 @@
   position: relative;
   background-position: center;
   background-size: cover;
+  pointer-events: none;
 }
 
 .rock {
@@ -52,5 +53,8 @@
   }
 }
 
-@media (min-width: 801px) {
+@media (max-height: 700px) {
+  .selector {
+    margin-top: 100px;
+  }
 }

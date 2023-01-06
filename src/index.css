@@ -17,6 +17,8 @@ body {
     #1f3756 0%,
     #131639 100%
   );
+
+  overflow: hidden;
 }
 
 code {
