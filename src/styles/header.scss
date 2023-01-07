@@ -2,6 +2,7 @@ $headerfontColor: white;
 $fontFamily: Barlow Semi Condensed;
 $DrkText: hsl(229, 25%, 31%);
 $ScoreText: hsl(229, 64%, 46%);
+
 .head_title {
   color: $headerfontColor;
   margin: 1em auto;
@@ -21,31 +22,36 @@ $ScoreText: hsl(229, 64%, 46%);
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px #000000;
   }
+
   .Score {
     display: flex;
     font-weight: 700;
-
     flex-direction: column;
     padding: 0.5em;
     justify-content: space-evenly;
     background-color: white;
     width: 7em;
     border-radius: 10px;
+
     .sc_title {
       color: $ScoreText;
     }
+
     .count {
       color: $DrkText;
       font-size: 3em;
       shadow: 2px 2px 2px 2px #3d3d3da0;
     }
   }
+
   @media (max-width: 768px) {
     width: 30em;
   }
+
   @media (max-width: 500px) {
     width: 25em;
   }
+
   @media (max-width: 420px) {
     width: 20em;
   }

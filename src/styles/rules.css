@@ -8,13 +8,12 @@
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   background-color: transparent;
   text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
   text-align: center;
   transition: all 0.2s;
 }
-
 .bn3:hover {
   color: black;
   background-color: rgb(255, 255, 255);

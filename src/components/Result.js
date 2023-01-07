@@ -13,7 +13,7 @@ const imgs = {
 
 const Result = ({ values, reset }) => {
   const vv = useContext(scoreContext);
-  console.log(values);
+
   if (values.result == 'win') {
     vv.points += 1;
     vv.add();

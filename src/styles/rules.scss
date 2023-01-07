@@ -1,30 +1,35 @@
+$primary-color: rgb(255, 255, 255);
+$secondary-color: #3e425f;
+$tertiary-color: rgba(0, 0, 0, 0.5);
+
 .bn3 {
   display: inline-block;
   padding: 0.5em 1.7em;
   margin: 0 0.1em 0.1em 0;
-  border: 0.16em solid rgb(255, 255, 255);
+  border: 0.16em solid $primary-color;
   border-radius: 7px;
   box-sizing: border-box;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #ffffff;
+  color: $primary-color;
   background-color: transparent;
-  text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+  text-shadow: 0 0.04em 0.04em rgba($primary-color, 0.253);
   text-align: center;
   transition: all 0.2s;
+
+  &:hover {
+    color: black;
+    background-color: $primary-color;
+  }
 }
 
-.bn3:hover {
-  color: black;
-  background-color: rgb(255, 255, 255);
-}
 .ruleArranger {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  color: #3e425f;
+  color: $secondary-color;
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 25px;
@@ -36,7 +41,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: $tertiary-color;
   display: flex;
   align-items: center;
   justify-content: center;

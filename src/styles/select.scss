@@ -1,3 +1,6 @@
+$position: absolute;
+$zIndex: 3;
+
 .selector {
   display: flex;
   margin-top: 150px;
@@ -17,24 +20,25 @@
 }
 
 .rock {
-  position: absolute;
-  z-index: 3;
+  position: $position;
+  z-index: $zIndex;
   transform: translate(95%, -45%);
 }
 .paper {
-  position: absolute;
-  z-index: 3;
+  position: $position;
+  z-index: $zIndex;
   transform: translate(-60%, -45%);
 }
 .scissors {
-  position: absolute;
-  z-index: 3;
+  position: $position;
+  z-index: $zIndex;
   transform: translate(15%, 60%);
 }
 
 .hide {
   display: none;
 }
+
 @media (max-width: 600px) {
   .selector {
     margin-top: 100px;
