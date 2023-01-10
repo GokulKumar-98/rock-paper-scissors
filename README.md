@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+Rock Paper Scissors
+A simple and fun game built using React, SCSS, and the Context Hook. The game features a scoreboard on top that keeps track of the user's wins, losses, and draws, a "Rules" button in the bottom that displays the rules in a modal when clicked, and a middle section where the user can select their move (rock, paper, or scissors) and see the result of the game.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The game is fully responsive and adjusts to different screen sizes, so you can play on any device.
 
-## Available Scripts
+Getting Started
+To get started, clone the repository and run the following commands:
 
-In the project directory, you can run:
+Copy code
+npm install
+npm start
+This will start a development server and open the game in your browser.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+How to Play
+Click on one of the images (rock, paper, or scissors) to make your move.
+The game will randomly select a move for the computer and determine the winner.
+The scoreboard on top will update with the result and the user's new score.
+If you want to play again, simply click the "Play Again" button and the game will reset.
+To view the rules of the game, click the "Rules" button in the bottom of the screen.
+Built With
+React - A JavaScript library for building user interfaces
+SCSS - A preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS)
+Context Hook - A hook in React that allows you to share state across your component tree without using props drilling
+Credits
+Thanks to React official documentation for providing helpful resources and examples on how to use React Hooks and Context.
+Thanks to the creators of SCSS for making styling fun and simple.
+Additional Note
+The project is open for contribution, and i'll be happy to see pull requests from developers to add new functionality or improve existing functionality and make this project even better.
